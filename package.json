@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,9 @@
     "url": "https://github.com/hau17/nodejs/issues"
   },
   "homepage": "https://github.com/hau17/nodejs#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
   "description": "",
   "dependencies": {
     "express": "^4.21.2",
@@ -27,9 +32,12 @@
     "nodejs": "file:"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.9",
+    "prettier": "^3.5.2",
     "sass": "^1.85.0"
   }
 }

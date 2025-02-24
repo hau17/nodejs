@@ -1,0 +1,17 @@
+{{!-- action giup mang theo noi dung cua form den trang khac --}}
+<form method="post" action="">
+  <div class="mb-3">
+    <label for="search-input" class="form-label">nhap noi dung can tim</label>
+    {{!-- name la key khi submit --}}
+    <input type="text" name="q" class="form-control" id="search-input" placeholder="nhap">
+  </div>
+    <div class="mb-3">
+    <label for="gender-input" class="form-label">nhap noi dung can tim</label>
+    <select name="gender" class="form-control" id="gender-input">
+        <option value="">chon gioi tinh</option>
+        <option value="nam">nam</option>
+        <option value="nu">nu</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">tim kiem</button>
+</form>

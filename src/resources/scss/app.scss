@@ -1,13 +1,12 @@
 @import '_variables';
-.test{
+.test {
     font-size: 3px;
 }
-h1{
+h1 {
     color: rgb(0, 255, 55);
     background-color: yellow;
     border: solid 2px $red-color;
 }
-h2{
+h2 {
     color: $red-color;
 }
-
