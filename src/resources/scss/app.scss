@@ -1,12 +1,10 @@
 @import '_variables';
-.test {
-    font-size: 3px;
+
+.card-course-item {
+    margin-top: 11px;
 }
-h1 {
-    color: rgb(0, 255, 55);
-    background-color: yellow;
-    border: solid 2px $red-color;
-}
-h2 {
-    color: $red-color;
+.card-img-top {
+    width: 110px; /* Hoặc số cụ thể: 200px, 300px,... */
+    height: 90px; /* Giữ tỉ lệ ảnh */
+    object-fit: cover; /* Cắt ảnh để vừa với kích thước */
 }

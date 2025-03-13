@@ -5,8 +5,8 @@ const app = express();
 const port = 3000;
 const morgan = require('morgan');
 const route = require('./routes/indexRoute');
-const db = require('./config/db');
-db.connect();
+const { connect } = require('./config/db');
+connect();
 //template engine
 //giúp truy cập file mà k cần qua route
 app.use(express.static(path.join(__dirname, 'public')));

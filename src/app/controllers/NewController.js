@@ -1,6 +1,6 @@
 class NewController {
     index(req, res) {
-        res.render('news');
+        res.send('day la new');
     }
     show(req, res) {
         res.send('New detail');

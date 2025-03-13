@@ -29,8 +29,11 @@
   "dependencies": {
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1",
-    "mongoose": "^8.10.2",
-    "nodejs": "file:"
+    "mongoose": "^8.12.1",
+    "mysql2": "^3.13.0",
+    "nodejs": "file:",
+    "sequelize": "^6.37.6",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "husky": "^9.1.7",

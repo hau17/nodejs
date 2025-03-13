@@ -1,10 +1,11 @@
-.test {
-  font-size: 3px; }
+@charset "UTF-8";
+.card-course-item {
+  margin-top: 11px; }
 
-h1 {
-  color: #00ff37;
-  background-color: yellow;
-  border: solid 2px #e01c1c; }
-
-h2 {
-  color: #e01c1c; }
+.card-img-top {
+  width: 110px;
+  /* Hoặc số cụ thể: 200px, 300px,... */
+  height: 90px;
+  /* Giữ tỉ lệ ảnh */
+  object-fit: cover;
+  /* Cắt ảnh để vừa với kích thước */ }
